@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/jkeyboard.css" />
+    <title>Keyboard</title>
+  </head>
+  <body id="regis_body">
+
+    <div class="col-4">
+    </div>
+    <div class="row">
+      <div class="mt-5 col-6 offset-3">
+        <div class="input-group mb-3">
+          <input  id="search_field" 
+            type="text"
+            class="form-control"
+            placeholder="Enter Your Name"/>
+          <div class="input-group-append">
+            <button
+              onclick="sub()"
+              class="btn btn-outline-success"
+              type="button">
+            <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-5" id="keyboard"></div>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jkeyboard.js"></script>
+    <script>
+      $("#keyboard").jkeyboard({
+        input: $("#search_field")
+      });
+    </script>
+  </body>
+</html>
+
